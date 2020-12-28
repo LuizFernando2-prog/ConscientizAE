@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+.card-img-top{width: 544px;}
+
+.card {
+    border: 3px black solid;
+    background-color: rgb(113, 75, 253);
+    border-radius: 10px;
+    font-family: 'Nerko One', cursive;
+    color: white;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+
+}
+
+.card-title {
+    font-size: 50px;
+    text-align: center;
+    width: 390px;
+    margin-left: 55px;
+    border-radius: 10px;
+    background-color: rgba(28, 16, 71, 0.884);
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+}
+
+.card-text {
+    text-align: center;
+    background-color: rgba(28, 16, 71, 0.884);
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+}
+
+body{
+    background-color: rgb(214, 228, 241);
+}
+header{
+    height: 80px;
+    background-color:  rgba(113, 75, 253, 0.562);
+    font-style: normal;
+}
+
+footer{height: 240px;
+    width: 100%;
+    background-color: #688eca;
+    color: white;
+    
+}
+
+li .butt:hover{background-color: rgba(41, 106, 128, 0.664);
+    color: white;}
+    
+li .butt{font-size: larger;
+    color: black;}
+
+
+#logo {
+    width: 80px;
+    height: 60px;
+}
+
+
+
+.logodiv {
+    width: 30px;
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: rgba(28, 16, 71, 0.884);
+    color: rgb(255, 255, 255);
+    border: 3px black solid;
+    border-radius: 5px;
+    font-family: 'Nerko One', cursive;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: black 5px 5px 10px;
+}
+
+.btn:hover{
+    padding: 15px 45px;
+    background-color: rgba(12, 6, 31, 0.884);
+    color: rgb(255, 255, 255);
+    border: 3px black solid;
+    border-radius: 5px;
+    font-family: 'Nerko One', cursive;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: black 5px 5px 10px;
+    transform: scale(1.03);
+}
+
+main {
+    margin-bottom: 100px;
+    margin-top: 30px;
+}

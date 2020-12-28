@@ -1,0 +1,7 @@
+.quiz-box .answers-indicator div.correct {
+    background-color: rgb(89, 202, 89);
+    background-image: url("./JS/correct.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

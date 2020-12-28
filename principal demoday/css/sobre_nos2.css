@@ -1,0 +1,32 @@
+li .butt:hover{background-color: rgba(41, 106, 128, 0.664);
+    color: white;}
+    
+li .butt{font-size: larger;
+    color: black;}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#logo {
+    width: 80px;
+    height: 60px;
+}
+
+
+
+.logodiv {
+    width: 30px;
+}
+
+#quem {
+    margin-left: 300px;
+}
+
+#projeto {
+    margin-left: 300px;
+}
+
+.swiper-container {
+    margin-left: 60px;
+}

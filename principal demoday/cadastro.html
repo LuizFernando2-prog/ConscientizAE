@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <script>
+    function alerta() {
+      alert ("Cadastrado com sucesso!")
+    }
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro ConscintiZAE</title>
+    <link rel="shortcut icon" href="../jogo da memoria/imagens/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+
+  <main>
+    <form name="cadastro" action="./php/cadastro.php" method="POST">
+    <h2><img id="logo" src="../jogo da memoria/imagens/logoDEFi.png" alt=""></h2>
+    <h3 style="text-align: center;">Cadastro</h3>
+            <br>
+            <!-- nome -->
+            <div class="row">
+              <div class="col">
+                <input type="text" name="nome" class="form-control" placeholder="Primeiro nome" maxlength="15" required autofocus>
+              </div>
+              <div class="col">
+                <input type="text" name="sobrenome" class="form-control" placeholder="Último nome" maxlength="15" required>
+              </div>
+            </div>
+            <!-- fim nome -->
+
+            <!-- email e Senha -->
+                <br>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="E-mail" required>
+                    <small id="emailHelp" class="form-text text-muted">Insira um e-mail válido.</small>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="password" name="senha" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Confirme sua senha" required>
+                  </div>
+                </div>
+
+            <!-- endereço -->
+    
+                
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <select class="form-control" name="estado" id="inputState" required>
+                        <option selected disabled>Estado...</option>
+                        <option>São Paulo</option>
+                    </select>
+                  </div> 
+
+                  <div class="form-group col-md-6">
+                    <select id="inputCity" name="cidade" class="form-control" required>
+                      <option selected disabled>Cidade...</option>
+                      <option>Adamantina</option>
+                      <option>Atibaia</option>
+                      <option>Barretos</option>
+                      <option>Campos do Jordão</option>
+                      <option>Francisco Morato</option>
+                      <option>Mauá</option>
+                      <option>Osasco</option>
+                      <option>São Paulo</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check" style="text-align: center;">
+                    <p>Já tem uma conta? <a href="login.html">Entre</a> </p>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck" required>
+                     <a href="">Concordo com os termos de privacidade</a>
+                    </label>
+                  </div>
+                </div>
+                <div style="text-align: center;">
+                <input type="submit" class="btn btn-primary" value="Cadastrar" onclick="Alerta()">
+                <input type="reset" class="btn btn-primary" value="Limpar">
+              </div>
+            <!--fim email e outros dados -->
+        </form> 
+        <img src="img/cadastro.png" class="img-fluid" alt="Responsive image">
+</main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

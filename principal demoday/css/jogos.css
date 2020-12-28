@@ -1,0 +1,24 @@
+
+*{box-sizing: 0;
+    margin: 0;
+    padding: 0;}
+
+    header{
+        height: 80px;
+        background-color:  rgba(113, 75, 253, 0.562);
+        font-style: normal;
+    }
+
+main{margin-left: 100px;
+    margin-right: 100px;
+display: flex;}
+
+.card-img-top{width: 545px;}
+
+.card-img-bottom{width: 550px;}
+
+.card{width: 550px;}
+
+.velha{margin-left: auto;}
+
+

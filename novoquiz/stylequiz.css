@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+header{
+    height: 80px;
+    margin-bottom: 100px;
+    background-color:  rgba(113, 75, 253, 0.562);
+    font-style: normal;
+}
+
+footer{height: 240px;
+    width: 100%;
+    background-color: #688eca;
+    color: white;
+    margin-top: 300px;
+}
+    
+li .butt:hover{background-color: rgba(41, 106, 128, 0.664);
+    color: white;}
+    
+li .butt{font-size: larger;
+    color: black;}
+body {
+    background-color: rgb(214, 228, 241);
+}
+.tudao {
+    margin: 0;
+    font-size: 16px;
+    background-color: rgb(214, 228, 241);
+    font-family: 'Nerko One', cursive;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.custom-box {
+    max-width: 700px;
+    background-color: rgb(113, 75, 253);
+    border: 2px rgba(28, 16, 71, 0.884) solid;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+    box-shadow: black 5px 5px 10px;
+}
+
+@keyframes fadeInRight {
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.custom-box.hide {
+    display: none;
+}
+
+.home-box > h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.home-box > p span {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.home-box .btn {
+    margin-top: 20px;
+}
+
+.home-box > p {
+    font-size: 21px;
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: rgba(28, 16, 71, 0.884);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nerko One', cursive;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: black 5px 5px 10px;
+}
+
+.btn:hover {
+    color: rgb(194, 175, 255);
+}
+.quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn,
+.quiz-box .answers-indicator{
+    width: 100%;
+    float: left;
+} 
+
+.quiz-box .question-number {
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    line-height: 35px;
+}
+.quiz-box .question-text {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+.quiz-box .option-container .option{
+    background-color: rgb(255, 255, 255);
+    padding:13px 15px;
+    font-size: 20px;
+    line-height: 22px;
+    color: rgba(28, 16, 71, 0.884);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-box .option-container .option:hover {
+    background-color: rgba(28, 16, 71, 0.884);
+    color: white;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.quiz-box .option-container .option.correct::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(89, 202, 89);
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+.quiz-box .option-container .option.wrong::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 97, 97);
+    z-index: -1;
+    animation: slideInLeft .5s ease forwards;
+}
+
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.quiz-box .option-container .option.correct {
+    color: rgb(255, 255, 255);
+}
+
+.quiz-box .option-container .option.wrong {
+    color: rgb(255, 255, 255);
+}
+
+.quiz-box .option-container .option.already-answered{
+    pointer-events: none;
+}
+
+
+
+.quiz-box .btn {
+    margin: 15px 0;
+}
+.quiz-box .answers-indicator{
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.quiz-box .answers-indicator div{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+
+.quiz-box .answers-indicator div.wrong {
+    background-color: rgb(233, 97, 97);
+    background-image: url("./JS/wrong.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result-box {
+    text-align: center;
+}
+.result-box.hide{
+    display: none;
+}
+
+.result-box h1 {
+    font-size: 36px;
+    line-height: 20px;
+    color: rgb(105, 24, 105);
+}
+
+.result-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+.result-box table td{
+    border: 2px solid rgba(28, 16, 71, 0.884);
+    padding: 8px 15px;
+    font-weight: 500;
+    width: 50%;
+    text-align: left;
+    font-size: 22px;
+}
+
+.result-box .btn {
+    margin-right: 20px;
+}
+
+@media (max-width: 767px){
+    .result-box .btn {
+        margin-bottom: 15px;
+    }
+}
+
+#result {
+    color: white;
+}
+
+#logo {
+    width: 80px;
+    height: 60px;
+}
+
+
+
+.logodiv {
+    width: 30px;
+}
+
+#titulo {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.titulao {
+    background-color: rgb(113, 75, 253);
+    border: 2px rgba(28, 16, 71, 0.884) solid;
+    height: 70px;
+    width: 500px;
+    margin-left: 400px;
+    border-radius: 10px;
+    margin-top: -40px;
+    box-shadow: black 5px 5px 10px;
+}
+
+
+
+
+

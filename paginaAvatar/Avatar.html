@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConscientiZAE - Avatar</title>
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../jogo da memoria/imagens/icon.png" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item logodiv">
+              <a class="nav-link" href="../principal demoday/index2.html">
+            <img src="../jogo da memoria/imagens/logoDEFi.png" alt="logo" id="logo"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link butt" href="../principal demoday/jogos.html">Jogos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link butt" href="../principal demoday/sobre_nos.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link butt" href="#">Avatares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link butt" href="../loja/loja.html">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link butt" href="../principal demoday/login.html"><img src="../principal demoday/img/enter.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link butt" href="../principal demoday/cadastro.html"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg></a>
+            </li>
+        </ul>
+    </header>
+    <div class="container-fluid">
+     
+        <div class="row" id="head2"><h1 id="titulo">Personalize o seu avatar!!</h1></div>
+        <div class="row">
+            <div class="col" id="ladinho"></div>
+        
+            <div class="col" id="botoes-pele">
+                <h3 id="pele"><strong>PELE</strong></h3>
+                <button class="btn-cor" onclick="changecolor1()" id="btnC1"></button>
+                <button class="btn-cor" onclick="changecolor2()" id="btnC2"></button>
+                <button class="btn-cor" onclick="changecolor3()" id="btnC3"></button>
+                <button class="btn-cor" onclick="changecolor4()" id="btnC4"></button>
+                <button class="btn-cor" onclick="changecolor5()" id="btnC5"></button>
+            </div>
+            <div class="col" id="avatar-centro">
+                <img src="avatar/noneH.png" alt="pé" id="imagem-foot">
+                <img src="avatar/noneH.png" alt="perna" id="imagem-leg">
+                <img src="avatar/sem-roupa.png" alt="roupa" id="imagem-body">
+                <img src="avatar/noneH.png" alt="chapeu" id="imagem-hair">
+                <img src="avatar/avatar-principal.png" alt="avatar" class="avatar" id="imagem-avatar">
+            </div>
+            <div class="col" id="botoes-auxiliares">
+                <button class="btn-aux reset" onclick="reset()"></button>
+                <button class="btn-aux share"></button>
+                <button class="btn-aux photo"></button>
+            </div>
+            <div class="col" id="ladinho"></div>
+        </div>
+    <div id="menu-baixo">
+        <div class="row">
+            <div class="col" id="cabeca">
+                <h3 class="subtitulo"><strong>CABEÇA</strong></h3>
+                <button type="button" class="btn-hair bt1" id="btnH1" onclick="changehair1()"></button>
+                <button type="button" class="btn-hair bt2" id="btnH2" onclick="changehair2()"></button>
+                <button type="button" class="btn-hair bt3" id="btnH3" onclick="changehair3()"></button>
+                <button type="button" class="btn-hair bt4" id="btnH4" onclick="changehair4()"></button>
+                <button type="button" class="btn-hair bt5" id="btnH5" onclick="changehair5()"></button>
+            </div>
+            <div class="col" id="cabeca">
+                <h3 class="subtitulo"><strong>CORPO</strong></h3>
+                <button type="button" class="btn-body bt1" id="btnB1" onclick="changebody1()"></button>
+                <button type="button" class="btn-body bt2" id="btnB2" onclick="changebody2()"></button>
+                <button type="button" class="btn-body bt3" id="btnB3" onclick="changebody3()"></button>
+                <button type="button" class="btn-body bt4" id="btnB4" onclick="changebody4()"></button>
+                <button type="button" class="btn-body bt5" id="btnB5" onclick="changebody5()"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="cabeca">
+                <h3 class="subtitulo"><strong>PERNA</strong></h3>
+                <button type="button" class="btn-leg bt1" id="btnL1" onclick="changeleg1()"></button>
+                <button type="button" class="btn-leg bt2" id="btnL2" onclick="changeleg2()"></button>
+                <button type="button" class="btn-leg bt3" id="btnL3" onclick="changeleg3()"></button>
+                <button type="button" class="btn-leg bt4" id="btnL4" onclick="changeleg4()"></button>
+                <button type="button" class="btn-leg bt5" id="btnL5" onclick="changeleg5()"></button>
+            </div>
+            <div class="col" id="cabeca">
+                <h3 class="subtitulo"><strong>PÉS</strong></h3>
+                <button type="button" class="btn-foot bt1" id="btnF1" onclick="changefoot1()"></button>
+                <button type="button" class="btn-foot bt2" id="btnF2" onclick="changefoot2()"></button>
+                <button type="button" class="btn-foot bt3" id="btnF3" onclick="changefoot3()"></button>
+                <button type="button" class="btn-foot bt4" id="btnF4" onclick="changefoot4()"></button>
+                <button type="button" class="btn-foot bt5" id="btnF5" onclick="changefoot5()"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="text-align: center;">
+    <h3 id="foot">Informações para contato</h3>
+    <p>(11) 96326-6584 | 36951487</p>
+    <p>Conscientizae@gmail.com</p>
+    <p>Rua Augusto Pimenta,159 | CEP: 01568-759 | São Paulo </p>
+    <a href="https://www.instagram.com/_conscientizae/" target="blank"><img src="../principal demoday/img/instagram.png" alt=""></a>
+    
+    </footer>
+
+
+    <script src="scriptA.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

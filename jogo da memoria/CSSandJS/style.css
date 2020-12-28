@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    width: 1316px;
+    margin-left: -20px;
+    margin-bottom: 40px;
+    background-color:  rgba(113, 75, 253, 0.562);
+    font-style: normal;
+}
+
+footer{height: 240px;
+    width: 100%;
+    width: 1316px;
+    margin-left: -20px;
+    background-color: #688eca;
+    color: white;
+    font-style: normal;
+    margin-top: 200px;
+}
+
+li .butt:hover{background-color: rgba(41, 106, 128, 0.664);
+    color: white;}
+    
+li .butt{font-size: larger;
+    color: black;}
+
+.body2 {
+   
+    background: rgb(214, 228, 241);
+    font-family: 'Nerko One', cursive;
+}
+
+body {
+    background: rgb(214, 228, 241);
+}
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    margin-top: 60px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: rgba(28, 16, 71, 0.884);
+    backface-visibility: hidden;
+    box-shadow: black 5px 5px 10px;
+    cursor: pointer;
+}
+
+.back-face:hover {
+    transform: scale(1.03);
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.hide {
+    display: none;
+}
+
+.result-box {
+    text-align: center;
+}
+
+.resultbox.hide {
+    display: none;
+}
+
+.result-box .btn {
+    margin-right: 20px;
+}
+
+.result-box h1 {
+    font-size: 30px;
+    line-height: 20px;
+    color: rgb(105, 24, 105);
+}
+
+#result {
+    color: white;
+}
+
+.custom-box {
+    max-width: 700px;
+    max-height: 350px;
+    background-color: rgb(113, 75, 253);
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+    box-shadow: black 5px 5px 10px;
+    border: 2px rgba(28, 16, 71, 0.884) solid;
+}
+
+@keyframes fadeInRight {
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: rgba(28, 16, 71, 0.884);
+    box-shadow: black 5px 5px 10px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Nerko One', cursive;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    color: rgb(194, 175, 255);
+}
+
+#coin {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.coin-gain {
+    border: 2px rgba(28, 16, 71, 0.884) solid;
+    text-align: center;
+    margin-left: 150px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: rgb(93, 65, 194);
+}
+
+.home-box {
+        width: 700px;
+        background-color: rgb(113, 75, 253);
+        border: 2px rgba(28, 16, 71, 0.884) solid;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 10px;
+        animation: fadeInRight 1s ease;
+        box-shadow: black 5px 5px 10px;
+        margin-left: 280px;
+        color: white;
+    }
+    
+    @keyframes fadeInRight {
+        0%{
+            transform: translateX(40px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    
+    .home-box::before,
+    .home-box::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    .home-box > h3 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        line-height: 20px;
+
+    }
+    
+    .home-box > p span {
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .home-box .btn {
+        margin-top: 20px;
+    }
+    
+    .home-box > p {
+        font-size: 21px;
+    }
+
+    
+.titulao {
+    background-color: rgb(113, 75, 253);
+    border: 2px rgba(28, 16, 71, 0.884) solid;
+    height: 70px;
+    width: 500px;
+    margin-left: 400px;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 10px;
+    animation: fadeInRight 1s ease;
+
+}
+
+#titulo {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.tudao {
+    margin: 0;
+    font-size: 16px;
+    background-color: rgb(214, 228, 241);
+    font-family: 'Nerko One', cursive;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+#logo {
+    width: 80px;
+    height: 60px;
+}
+
+
+
+.logodiv {
+    width: 30px;
+}
+
+.tabuleiro {
+    border: 3px black solid;
+    width: 800px;
+    height: 750px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(113, 75, 253, 0.562);
+    box-shadow: black 5px 5px 10px;
+
+}
